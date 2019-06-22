@@ -2,7 +2,7 @@
 
 Bu kitapta Bash programlama dili için detaylı bir anlatım ve çokça uygulamaya yönelik içerikler bulacaksınız. Buna garanti veriyorum çünkü henüz bu önsözü kaleme alırken ben Bash programlama dilini bilmiyorum. Bu durumda öğrenirken bir yandan da kaleme alacağım demek oluyor. Bu durumun bir dezavantaj değil, avantaj olduğunu düşünüyorum. Belki duymuşsunuzdur, 'ustadan bir şey öğrenilmez' diye bir söz var. Ne kadar doğru bilemem ancak benim durumumda söylemek gerekir ki henüz bu konuda acemi olduğumdan ne öğreniyorsam bir yandan da yazacağım. Nasıl bir öğrenme metodu izlediysem hepsi bu kitapta yer alıyor olacak. Bunun da okurlar için bir avantaj olduğu yadsınmaz bir gerçek.
 
-Bash programlama dili GNU/Linux ve OS X sistemlerde bulunan kabuk dilidir. Bu sebeple bilgisayarın yönetimi olsun, sunucuların yönetimi olsun eğer uzmanlaşmak ve maksimum verimi almak istiyorsak bu dili çok iyi kullanmamız gerekiyor. Bu dilde uzmanlaştıktan sonra neler yapabiliriz kabaca görmekte fayda var.
+Bash programlama dili GNU/Linux ve OS X sistemlerde bulunan kabuk dilidir. OS X sistemlerin varsayılanı _**sh**_ iken Linux sistemlerde _**bash**_ kabuk yorumlayıcısı olarak kullanılır. Bu sebeple bilgisayarın yönetimi olsun, sunucuların yönetimi olsun eğer uzmanlaşmak ve maksimum verimi almak istiyorsak bu dili çok iyi kullanmamız gerekiyor. Bu dilde uzmanlaştıktan sonra neler yapabiliriz kabaca görmekte fayda var.
 
 * Bilgisayarımızda çalışan pek çok uygulamanın, komutun kaynak kodlarına erişim sağlayabilir, çıkarlarımız doğrultusunda düzenlemeler yapabiliriz.
 * Bilgisayarımız hakkında pek çok bilgiye erişebilir, bu bilgiler doğrultusunda bilgisayar üzerinde hakimiyet sağlayarak bilgisayara tam erişim sağlayabiliriz.

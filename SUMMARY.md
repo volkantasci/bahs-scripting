@@ -9,6 +9,7 @@
 * [Komut Yapısı](kabuk-programlamaya-gecmeden-once/linux-komut-yapisi.md)
 * [Yardım Alma](kabuk-programlamaya-gecmeden-once/yardim-alma.md)
 * [Dosya-Dizin Bilgileri ve Güvenlik-İzin Ayarları](kabuk-programlamaya-gecmeden-once/dosya-dizin-bilgileri-ve-guevenlik-izin-ayarlari.md)
+* [Sıklıkla Kullanılacak Olan Komutlar](kabuk-programlamaya-gecmeden-once/siklikla-kullanilacak-olan-komutlar.md)
 
 ## BASH Programlamaya Giriş
 
