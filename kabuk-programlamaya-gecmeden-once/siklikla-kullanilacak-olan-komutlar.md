@@ -40,9 +40,19 @@ cd /home/ryuk
 
 Açılımı _Print Working Directory_ olan, içinde bulunduğumuz dizin yolunu ekrana bastıran çok kullanışlı komuttur.
 
+{% code-tabs %}
+{% code-tabs-item title="Girdi" %}
 ```bash
 pwd
 ```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="Çıktı" %}
+```
+/home/ryuk/Belgeler
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 Kitap yazımı devam ettikçe bu sayfa da güncellenecektir.
 
