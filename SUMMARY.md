@@ -15,7 +15,6 @@
 
 * [Bourne Again Shell](bash-programlamaya-giris/bourne-again-shell.md)
 * [BASH Dosyası Oluşturma](bash-programlamaya-giris/bash-dosyasi-olusturma.md)
-* [Dosya İzinleri](bash-programlamaya-giris/dosya-izinleri.md)
 * [İlk Uygulama](bash-programlamaya-giris/ilk-uygulama.md)
 * [Değişkenler](bash-programlamaya-giris/degiskenler.md)
 * [Sistem Değişkenleri ve Kullanıcı Değişkenleri](bash-programlamaya-giris/sistem-degiskenleri-ve-kullanici-degiskenleri.md)

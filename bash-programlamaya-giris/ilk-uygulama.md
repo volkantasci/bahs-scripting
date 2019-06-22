@@ -2,7 +2,7 @@
 
 Bu bölümde ilk uygulamamızı yazacağız. Adettendir, herhangi bir programlama dili öğrenilirken ilk olarak ekrana 'Merhaba Dünya' yazılır. Biz de bu geleneği bozmadan ekrana 'Merhaba Dünya' yazan bir uygulama yapacağız.
 
-BASH dilinde ekrana bir şey bastırmak için kullanılan komut echo komutudur. Elbette daha derin inceleyeceğiz ancak şimdilik üstünkörü bir şekilde ekrana bir çıktı bastırmak için yazıp geçelim.
+BASH dilinde ekrana bir şey bastırmak için kullanılan komut **echo** komutudur. Elbette daha derin inceleyeceğiz ancak şimdilik üstünkörü bir şekilde ekrana bir çıktı bastırmak için yazıp geçelim.
 
 {% code-tabs %}
 {% code-tabs-item title="Program" %}
@@ -14,9 +14,9 @@ echo "Merhaba Dünya"
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-hello.sh dosyasını yukarıdaki biçimde doldurdum ve kaydettim. Dosyamıza bir önceki bölümde çalıştırma izni vermiştik. Şimdi de nasıl çalıştırıldığını görelim.
+_hello.sh_ dosyasını yukarıdaki biçimde doldurup ve kaydedelim. Dosyamıza önceki bölümlerde öğrendiğimiz gibi çalıştırma izni verelim. Şimdi de nasıl çalıştırıldığını görelim.
 
-Komut satırında şu ifadeyi yazarak hello.sh dosyasını içinde belirtilen dille çalıştırıyoruz:
+Komut satırında şu ifadeyi yazarak _hello.sh_ dosyasını içinde belirtilen dille çalıştırıyoruz:
 
 {% code-tabs %}
 {% code-tabs-item title="Komut" %}
@@ -26,7 +26,7 @@ Komut satırında şu ifadeyi yazarak hello.sh dosyasını içinde belirtilen di
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Burada yazmış olduğumuz nokta \(.\) 'içinde bulunduğumuz dizini' temsil etmektedir. Eğik çizgi ise 'yazılan dizinin altında' anlamını taşımaktadır. Yani toplamında 'içinde bulunduğumuz dizin altında' anlamına gelmektir. İçinde bulunduğumuz dizin altındaki hello.sh dosyasını yazmış olduk. Enter yaptığımız durumda bu dosya çalışacaktır.
+Burada yazmış olduğumuz nokta \(.\) 'içinde bulunduğumuz dizini' temsil etmektedir. Eğik çizgi ise 'yazılan dizinin altında' anlamını taşımaktadır. Yani toplamında 'içinde bulunduğumuz dizin altında' anlamına gelmektir. İçinde bulunduğumuz dizin altındaki _hello.sh_ dosyasını yazmış olduk. Enter'e bastığımız durumda bu dosya çalışacaktır.
 
 Dosya çalıştıktan sonra komut satırında şöyle bir cümle görünüyor:
 
