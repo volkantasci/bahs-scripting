@@ -75,7 +75,9 @@ Karesi: 3*3
 
 
 
-Görüldüğü gibi çarpma işlemi gerçekleşmiyor. BASH ile aritmetik işlemler yapmanın yolu bu değil. Eğer sayısal işlem yapacaksak **let** komutundan faydalanmalıyız. Sonraki bölümde de bunu göreceğiz.
+Görüldüğü gibi çarpma işlemi gerçekleşmiyor. BASH ile aritmetik işlemler yapmanın yolu bu değil. Eğer sayısal işlem yapacaksak **let** komutundan faydalanmalıyız. Sonraki bölümde de bunu göreceğiz. Ancak sonraki bölüme geçmeden önce **read** komutu ile ilgili daha fazla örnek ve ihtiyacımız olan parametreleri görelim.
+
+
 
 
 
