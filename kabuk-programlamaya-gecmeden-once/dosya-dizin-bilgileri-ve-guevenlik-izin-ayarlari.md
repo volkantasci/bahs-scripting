@@ -41,7 +41,7 @@ Birinci üçlü: Dosyanın sahibi, ikinci üçlü: Grup ve üçüncü üçlü: D
 
 Bir dizin ya da dosyanın izin ayarları nasıl değiştirilir? sorusuna cevap verelim.
 
-Öncelikle, bir dosyada izin ayarı değişikliğine neden ihtiyaç duyulur? sorusuna cevap vermemiz gerekiyor. Bazı dosyalar üzerinde değişiklik yapmak istediğimizde engellerle karşılaşabiliriz. Bunun birincil sebebi o dosyanın sahibi olmayışımız olabilir. Örneğin _root_ kullanıcısına ait bir dosyada değişiklik yapmak için ya _sudo_ yetkisini almak ya da _root_ olmak gerekir. Ancak _root_' a ait bir dosyaya _root_ olmadan ulaşmak istersek _root_ olduktan sonra bu dosyada izinleri değiştirebiliriz.
+Öncelikle, bir dosyada izin ayarı değişikliğine neden ihtiyaç duyulur? sorusuna cevap vermemiz gerekiyor. Bazı dosyalar üzerinde değişiklik yapmak istediğimizde engellerle karşılaşabiliriz. Bunun birincil sebebi o dosyanın sahibi olmayışımız olabilir. Örneğin _root_ kullanıcısına ait bir dosyada değişiklik yapmak için ya _sudo_ yetkisini almak ya da _root_ olmak gerekir. Ancak _root'_ a ait bir dosyaya _root_ olmadan ulaşmak istersek _root_ olduktan sonra bu dosyada izinleri değiştirebiliriz.
 
 {% hint style="info" %}
 Yukarıda yazılanlar yalnızca bir örnektir. Eğer ne yaptığını çok iyi bilen biri değilseniz **root** kullanıcısına ait dosyalara erişim yetkisini bir başka kullanıcıya vermek pek akıllıca olmayacaktır. 
@@ -52,4 +52,46 @@ Dosyada izin değişikliğine gitmemizdeki bir diğer amaç bu dosyayı çalış
 Yazdığımız bir uygulamayı komut satırından çağırırken bu dosyanın çalıştırılabilir halde olması gerekiyor ve biz de bu sebeple dosyalarda izin değişikliği yapacağız.
 
 Örnek olarak bir BASH dosyasına çalıştırma yetkisi verelim. Bunun için izleyebileceğimiz birden çok yol var.
+
+Bunlardan birincisi \(bu eğitimde sıklıkla kullanacağımız\) `+x` ifadesidir. Bu ifade sayesinde dosyalara çalıştırma \(Executable\) yetkisi verilir. Nasıl kullanıldığına bakalım.
+
+```bash
+chmod +x dosya_adı.sh
+```
+
+Yukarıdaki komut yardımıyla tüm kullanıcılara \(sahip, grup ve diğerleri\) bu dosya üzerinde çalıştırma yetkisi verilmiştir. Benzer metotla herhangi bir yetki bu kullanıcılardan geri alınabilir.
+
+```bash
+chmod -x dosya_adı.sh
+```
+
+{% hint style="info" %}
+Bu yöntemler `w` ve `r` yetkilerinde de kullanılabilmektedir.
+{% endhint %}
+
+Her bir kullanıcı için \(sahip, grup ve diğerleri\) farklı izin yetkileri ayarlamak istersek bunu nasıl yapabiliriz? İşte burada ikinci metodumuz devreye giriyor: dosyalara sayı kullanarak izin yetkisi vermek. Nasıl mı?
+
+Sayılar, her yetki için farklı değerdedir ve birden fazla yetki verebilmek için bu sayılar toplanır. Öncelikle bu sayıları görelim.
+
+| Kip | Değer |
+| :--- | :--- |
+| r | 4 |
+| w | 2 |
+| x | 1 |
+
+Örneğin; bir dosyanın sahibi ve diğer tüm kullanıcılara dosya üzerinde sadece okuma yetkisi vermek istersek aşağıdaki biçimde komut kullanırız.
+
+```bash
+chmod 444 dosya.sh
+```
+
+Komut içinde kullandığımız `444` sayısı aslında 3 parçaya ayrılmış şekilde inceleniyor. `{4}{4}{4}` Birinci sütun dosyanın sahibinin izinlerini, ikinci sütun grup kullanıcılarının izinlerini, üçüncü sütun ise diğer kullanıcıların izinlerini temsil ediyor. Yani `444` sayısı ile tüm kullanıcılara yalnızca okuma yetkisi vermiş oluyoruz.
+
+Eğer dosya sahibine tüm izinleri, diğer kullanıcılara ise sadece okuma iznini vermek istersek aşağıdaki gibi komut kullanırız.
+
+```bash
+chmod 744 dosya.sh
+```
+
+`chmod` kullanımı hakkında eğitim boyunca bu bilgiler işimizi görecektir. Ancak `chmod` komutunun parametreleri için İnternet üzerinde detaylı arama yapabilir ya da yardım alma sayfalarına bakabilirsiniz.
 
